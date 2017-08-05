@@ -15,7 +15,7 @@ import './motivatequote';
 import ReactScrollbar from 'react-scrollbar-js';
 import {Fade} from 'react-fade';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-
+import Collapsible from 'react-collapsible';
 var Q = quotes.length;
 var whichQuotation=Math.round(Math.random()*(Q-1));
 var dailyquote = quotes[whichQuotation];
@@ -40,14 +40,15 @@ handleSelect(selectedKey) {
         <Router>
         <div>
 
-        <Col md={3} id="nav-bar">
+        <Collapsible trigger="click here" className="mobile">
+        <div>
+        <Col md={3} sm={3} className="mob-nav-bar">
         <div id="header">
-        <br/>
+        <div className="imageholder">
         <Img src="/app/img/swathy.jpg"/>
-        <br />
+        </div>
         <p><NavLink to="/" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
         </div>
-
         <Nav bsStyle="pills" stacked>
         <NavItem eventKey={1} href="/about"><span id="textclr">About me</span></NavItem>
         <NavItem eventKey={2} href="/portfolio"><span id="textclr">Web Portfolio</span></NavItem>
@@ -55,17 +56,41 @@ handleSelect(selectedKey) {
         <NavItem eventKey={3} href="/profile"><span id="textclr">Profile</span></NavItem>
         <NavItem eventKey={5} href="/contact"><span id="textclr">Contact me</span></NavItem>
         </Nav>
-
-        <div id="footer">
-        <p>Let us Connect</p><hr/>
+        <div id="mob-footer">
+        <p>Let us Connect</p>
         <a href="https://github.com/swathyjayaseelan"><i className="fa fa-github fa-2x iconcolor" aria-hidden="true"></i></a>
         <a href="http://www.linkedin.com/in/swathy-jayaseelan"><i className="fa fa-linkedin-square fa-2x iconcolor" aria-hidden="true"></i></a>
         <a href="mailto:swathyjayaseelan@gmail.com"><i className="fa fa-envelope fa-2x iconcolor" aria-hidden="true"></i></a>
         <a href="https://www.facebook.com/swathy.jayaseelan"><i className="fa fa-facebook fa-2x iconcolor" aria-hidden="true"></i></a>
-
         </div>
         </Col>
-          <Col md={9} id="content">
+        </div>
+        </Collapsible>
+
+        <Col md={3} sm={3} className="nav-bar">
+        <div id="header">
+        <br/>
+        <Img src="/app/img/swathy.jpg"/>
+        <br />
+        <p><NavLink to="/" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
+        </div>
+        <Nav bsStyle="pills" stacked>
+        <NavItem eventKey={1} href="/about"><span id="textclr">About me</span></NavItem>
+        <NavItem eventKey={2} href="/portfolio"><span id="textclr">Web Portfolio</span></NavItem>
+        <NavItem eventKey={4} href="/otherprojects"><span id="textclr">Project Management Portfolio</span></NavItem>
+        <NavItem eventKey={3} href="/profile"><span id="textclr">Profile</span></NavItem>
+        <NavItem eventKey={5} href="/contact"><span id="textclr">Contact me</span></NavItem>
+        </Nav>
+        <div id="footer">
+        <p>Let us Connect</p>
+        <a href="https://github.com/swathyjayaseelan"><i className="fa fa-github fa-2x iconcolor" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com/in/swathy-jayaseelan"><i className="fa fa-linkedin-square fa-2x iconcolor" aria-hidden="true"></i></a>
+        <a href="mailto:swathyjayaseelan@gmail.com"><i className="fa fa-envelope fa-2x iconcolor" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/swathy.jayaseelan"><i className="fa fa-facebook fa-2x iconcolor" aria-hidden="true"></i></a>
+        </div>
+        </Col>
+
+          <Col md={9}  sm={9} id="content">
           <Switch>
           <Route exact path="/" component={Welcome}/>
           <Route path="/about" component={About}/>
