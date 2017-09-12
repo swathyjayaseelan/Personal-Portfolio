@@ -11,10 +11,10 @@ class OtherProjects extends React.Component {
         <Grid className="projectitem">
         <Row className="show-grid">
         <Col md={7}>
-        <a href={item.url} style={{color: '#008080	'}}><h3 className="titlenames">{item.name}</h3></a><br/>
+        <a href={item.url} style={{color: ' #3b5998	'}}><h3 className="titlenames">{item.name}</h3></a><br/>
         <p>{item.desc}</p>
-        <p>Contributors:</p>{item.contributors}<br/>
-
+        <p><b>Contributors:</b></p>{item.contributors}<br/><br/>
+        <a href={item.url}>View</a>
         </Col>
         <Col md={5}>
         <Img id="projectimg" src={item.img}/>
@@ -26,7 +26,7 @@ class OtherProjects extends React.Component {
 
     return (
       <div className="othercontent">
-      <h1 className="titlenames">My other projects..</h1><hr/>
+      <h1 className="titlenames">My other projects</h1><hr/>
       <div>
       {arr}
       </div>

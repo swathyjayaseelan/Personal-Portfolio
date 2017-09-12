@@ -6,7 +6,7 @@ var Contact = require('./contact');
 var OtherProjects = require('./otherprojects');
 var Profile = require('./profile');
 require('./css/index.css');
-import {Nav,NavItem,Grid,Row,Col} from 'react-bootstrap';
+import {Nav,NavItem,Grid,Row,Col,Badge} from 'react-bootstrap';
 
 import {BrowserRouter as Router,Route,NavLink,Switch,Link} from 'react-router-dom';
 import Img from 'react-image';
@@ -57,7 +57,7 @@ handleSelect(selectedKey) {
         <NavItem eventKey={5} href="/contact"><span id="textclr">Contact me</span></NavItem>
         </Nav>
         <div id="mob-footer">
-        <p>Let us Connect</p>
+        <p>Let&#39;s Connect</p>
         <a href="https://github.com/swathyjayaseelan"><i className="fa fa-github fa-2x iconcolor" aria-hidden="true"></i></a>
         <a href="http://www.linkedin.com/in/swathy-jayaseelan"><i className="fa fa-linkedin-square fa-2x iconcolor" aria-hidden="true"></i></a>
         <a href="mailto:swathyjayaseelan@gmail.com"><i className="fa fa-envelope fa-2x iconcolor" aria-hidden="true"></i></a>
@@ -76,17 +76,17 @@ handleSelect(selectedKey) {
         </div>
         <Nav bsStyle="pills" stacked>
         <NavItem eventKey={1} href="/about"><span id="textclr">About me</span></NavItem>
-        <NavItem eventKey={2} href="/portfolio"><span id="textclr">Web Portfolio</span></NavItem>
-        <NavItem eventKey={4} href="/otherprojects"><span id="textclr">Project Management Portfolio</span></NavItem>
+        <NavItem eventKey={2} href="/portfolio"><span id="textclr">Web Portfolio</span><Badge>12</Badge></NavItem>
+        <NavItem eventKey={4} href="/otherprojects"><span id="textclr">Project Management Portfolio</span><Badge>5</Badge></NavItem>
         <NavItem eventKey={3} href="/profile"><span id="textclr">Profile</span></NavItem>
         <NavItem eventKey={5} href="/contact"><span id="textclr">Contact me</span></NavItem>
         </Nav>
         <div id="footer">
-        <p>Let us Connect</p>
+        <p>Let&#39;s Connect</p>
         <a href="https://github.com/swathyjayaseelan"><i className="fa fa-github fa-2x iconcolor" aria-hidden="true"></i></a>
         <a href="http://www.linkedin.com/in/swathy-jayaseelan"><i className="fa fa-linkedin-square fa-2x iconcolor" aria-hidden="true"></i></a>
         <a href="mailto:swathyjayaseelan@gmail.com"><i className="fa fa-envelope fa-2x iconcolor" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/swathy.jayaseelan"><i className="fa fa-facebook fa-2x iconcolor" aria-hidden="true"></i></a>
+        <a href="https://profiles.udacity.com/p/7320369975"><i className="fa fa-underline fa-2x iconcolor" aria-hidden="true"></i></a>
         </div>
         </Col>
 
@@ -146,22 +146,17 @@ class Welcome extends React.Component {
     return (
       <div id="welcomepage">
       <div id="welcome">
-      <p>Hi, I am Swathy !</p><br/>
-      <ReactCSSTransitionGroup
-      transitionName="example"
-      transitionAppear={true}
-      transitionAppearTimeout={500}
-      transitionEnter={false}
-      transitionLeave={false}>
-      <p>
-        A Full Stack Developer
-        Experienced SW Professional
-        Project Manager
+      <p className="mainprofile">Hello, this is Swathy ! Welcome to my portfolio !!
+      <br/>
       </p>
-      </ReactCSSTransitionGroup>
-      <div>
-      <p id="quotedisplay"><i>{dailyquote}</i></p>
+      <div className="centercontent">
+        <p>I&#39;m a Full Stack Web Developer,</p>
+        <p>A CSUF(Fall&#39;17) graduate holding</p>
+        <p>Udacity Full Stack & Front-End Nanodegrees,</p>
+        <p>With 3 years SW & PM experience.</p>
+        <i>Ready for new opportunities <i className="fa fa-thumbs-up" aria-hidden="true"></i></i>
       </div>
+
       </div>
       </div>
     );
