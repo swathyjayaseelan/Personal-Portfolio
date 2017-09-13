@@ -75,11 +75,11 @@ handleSelect(selectedKey) {
         <p><NavLink to="/" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
         </div>
         <Nav bsStyle="pills" stacked>
-        <NavItem eventKey={1} href="/about"><span id="textclr">About me</span></NavItem>
-        <NavItem eventKey={2} href="/portfolio"><span id="textclr">Web Portfolio</span><Badge>12</Badge></NavItem>
-        <NavItem eventKey={4} href="/otherprojects"><span id="textclr">Project Management Portfolio</span><Badge>5</Badge></NavItem>
-        <NavItem eventKey={3} href="/profile"><span id="textclr">Profile</span></NavItem>
-        <NavItem eventKey={5} href="/contact"><span id="textclr">Contact me</span></NavItem>
+        <NavItem eventKey={1} href="/Personal-Portfolio/about"><span id="textclr">About me</span></NavItem>
+        <NavItem eventKey={2} href="/Personal-Portfolio/portfolio"><span id="textclr">Web Portfolio</span><Badge>12</Badge></NavItem>
+        <NavItem eventKey={4} href="/Personal-Portfolio/otherprojects"><span id="textclr">Project Management Portfolio</span><Badge>5</Badge></NavItem>
+        <NavItem eventKey={3} href="/Personal-Portfolio/profile"><span id="textclr">Profile</span></NavItem>
+        <NavItem eventKey={5} href="/Personal-Portfolio/contact"><span id="textclr">Contact me</span></NavItem>
         </Nav>
         <div id="footer">
         <p>Let&#39;s Connect</p>
@@ -92,12 +92,12 @@ handleSelect(selectedKey) {
 
           <Col md={9}  sm={9} id="content">
           <Switch>
-          <Route exact path="/" component={Welcome}/>
-          <Route path="/about" component={About}/>
-          <Route path="/portfolio" component={Portfolio}/>
-          <Route path="/contact" component={Contact}/>
-          <Route path="/otherprojects" component={OtherProjects}/>
-          <Route path="/profile" component={Profile}/>
+          <Route exact path="/Personal-Portfolio" component={Welcome}/>
+          <Route path="/Personal-Portfolio/about" component={About}/>
+          <Route path="/Personal-Portfolio/portfolio" component={Portfolio}/>
+          <Route path="/Personal-Portfolio/contact" component={Contact}/>
+          <Route path="/Personal-Portfolio/otherprojects" component={OtherProjects}/>
+          <Route path="/Personal-Portfolio/profile" component={Profile}/>
           </Switch>
           </Col>
           </div>
