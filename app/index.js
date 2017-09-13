@@ -72,7 +72,7 @@ handleSelect(selectedKey) {
         <br/>
         <Img src="app/img/swathy.jpg"/>
         <br />
-        <p><NavLink to="/" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
+        <p><NavLink to="/Personal-Portfolio" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
         </div>
         <Nav bsStyle="pills" stacked>
         <NavItem eventKey={1} href="/about"><span id="textclr">About me</span></NavItem>
@@ -92,7 +92,7 @@ handleSelect(selectedKey) {
 
           <Col md={9}  sm={9} id="content">
           <Switch>
-          <Route exact path="/" component={Welcome}/>
+          <Route path="/Personal-Portfolio" component={Welcome}/>
           <Route path="/about" component={About}/>
           <Route path="/portfolio" component={Portfolio}/>
           <Route path="/contact" component={Contact}/>
