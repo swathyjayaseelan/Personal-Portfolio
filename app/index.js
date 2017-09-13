@@ -45,7 +45,7 @@ handleSelect(selectedKey) {
         <Col md={3} sm={3} className="mob-nav-bar">
         <div id="header">
         <div className="imageholder">
-        <Img src="./img/swathy.jpg"/>
+        <Img src="/app/img/swathy.jpg"/>
         </div>
         <p><NavLink to="/" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
         </div>
@@ -70,7 +70,7 @@ handleSelect(selectedKey) {
         <Col md={3} sm={3} className="nav-bar">
         <div id="header">
         <br/>
-        <Img src="./img/swathy.jpg"/>
+        <Img src="/app/img/swathy.jpg"/>
         <br />
         <p><NavLink to="/" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
         </div>
