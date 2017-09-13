@@ -50,11 +50,11 @@ handleSelect(selectedKey) {
         <p><NavLink to="/" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
         </div>
         <Nav bsStyle="pills" stacked>
-        <NavItem eventKey={1} href="/about"><span id="textclr">About me</span></NavItem>
-        <NavItem eventKey={2} href="/portfolio"><span id="textclr">Web Portfolio</span></NavItem>
-        <NavItem eventKey={4} href="/otherprojects"><span id="textclr">Project Management Portfolio</span></NavItem>
-        <NavItem eventKey={3} href="/profile"><span id="textclr">Profile</span></NavItem>
-        <NavItem eventKey={5} href="/contact"><span id="textclr">Contact me</span></NavItem>
+        <NavItem eventKey={1} href="/Personal-Portfolio/about"><span id="textclr">About me</span></NavItem>
+        <NavItem eventKey={2} href="/Personal-Portfolio/portfolio"><span id="textclr">Web Portfolio</span></NavItem>
+        <NavItem eventKey={4} href="/Personal-Portfolio/otherprojects"><span id="textclr">Project Management Portfolio</span></NavItem>
+        <NavItem eventKey={3} href="/Personal-Portfolio/profile"><span id="textclr">Profile</span></NavItem>
+        <NavItem eventKey={5} href="/Personal-Portfolio/contact"><span id="textclr">Contact me</span></NavItem>
         </Nav>
         <div id="mob-footer">
         <p>Let&#39;s Connect</p>
@@ -72,7 +72,7 @@ handleSelect(selectedKey) {
         <br/>
         <Img src="app/img/swathy.jpg"/>
         <br />
-        <p><NavLink to="/" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
+        <p><NavLink to="/Personal-Portfolio" activeStyle={{ color:'white' }}>Swathy Jayaseelan</NavLink></p><hr/>
         </div>
         <Nav bsStyle="pills" stacked>
         <NavItem eventKey={1} href="/Personal-Portfolio/about"><span id="textclr">About me</span></NavItem>
