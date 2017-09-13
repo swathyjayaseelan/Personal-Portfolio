@@ -108,25 +108,7 @@ handleSelect(selectedKey) {
   }
 };
 
-/*class Nav extends React.Component {
-  render(){
-    return (
-    <div>
-    <div className="navigation">
-    <li><NavLink to="/about">About me</NavLink></li>
-    <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-    <li><NavLink to="/profile">Profile</NavLink></li>
-    <li><NavLink to="/otherprojects">Other Projects</NavLink></li>
-    <li><NavLink to="/contact">Contact me</NavLink></li>
-    </div>
-    <div className="content">
-    {this.props.children}
-    </div>
-    </div>
-  );
-  }
-};
-*/
+
 
 
 class Welcome extends React.Component {
