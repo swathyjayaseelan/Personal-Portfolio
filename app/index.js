@@ -11,7 +11,7 @@ import {Nav,NavItem,Grid,Row,Col,Badge} from 'react-bootstrap';
 import {BrowserRouter as Router,Route,NavLink,Switch,Link} from 'react-router-dom';
 import Img from 'react-image';
 import Typist from 'react-typist';
-import './motivatequote';
+import '../motivatequote';
 import ReactScrollbar from 'react-scrollbar-js';
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';

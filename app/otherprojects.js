@@ -1,5 +1,5 @@
 var React = require('react');
-import './motivatequote';
+import '../motivatequote';
 import {Grid,Row,Col} from 'react-bootstrap';
 import Img from 'react-image';
 

@@ -1,6 +1,6 @@
 var React = require('react');
 import {Grid,Row,Col,Table} from 'react-bootstrap';
-import './motivatequote';
+import '../motivatequote';
 import Img from 'react-image';
 
 
